@@ -1,7 +1,9 @@
 /* General defaults */
-body {
+body, html {
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -83,10 +85,15 @@ nav .nav-bar ul li a:hover {
 
 /* Hero section */
 #welcome .welcome {
-background-color: rgb(130, 186, 235);
+background-image: url(../images/image2.jpg);
+background-position: center;
+background-attachment: scroll;
+background-repeat: no-repeat;
+background-size: cover;
 height: 500px;
 align-content: center;
 margin-top: 130px;
+margin-bottom: 100px;
 }
 
 #welcome h1 {
@@ -94,14 +101,39 @@ margin-top: 130px;
     font-weight: 800;
     text-align: center;
     letter-spacing: -2px;
+    color: rgb(187, 236, 212);
+    text-shadow: 5px 2px black;
 }
 
 .welcome p {
     text-align: center;
     margin-bottom: 15px;
+    color: rgb(187, 236, 212);
+    text-shadow: 1px 2px rgb(66, 3, 3);
+    font-size: 28px;
+    line-height: 1;
+    font-weight: 400;
+    background-color: rgb(126, 180, 226);
+    height: 50px;
+    align-content: center;
 }
 
 .welcome ul {
     display: flex;
     justify-content: center;
+}
+
+.welcome .cta {
+    height: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0 5px;
+}
+
+/* Our Services */
+#services h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: -2px;
 }
