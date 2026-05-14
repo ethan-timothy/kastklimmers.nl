@@ -211,6 +211,18 @@ main .hero-section .steps {
     color: black;
 }
 
+.socials {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.socials img {
+    width: 40px;
+    margin: 0;
+    gap: 10px;
+}
+
 footer {
     align-items: center;
     align-content: center;
