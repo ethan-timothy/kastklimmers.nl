@@ -245,6 +245,27 @@ footer p{
     text-align: center;
 }
 
+/* Gallery section */
+.gallery-images {
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:20px;
+    margin: 0 50px;
+}
+
+/* Contact */
+.form-container {
+    width: 100%;
+    justify-content: center;
+}
+
+.form-container iframe{
+  width:100%;
+  height:100vh;
+  border:none;
+}
+
+
 /* Responsive */
 @media (max-width: 1020px){
     .nav-container {
