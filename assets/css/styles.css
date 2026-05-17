@@ -21,22 +21,24 @@ h1 {
     font-size: 60px;
     line-height: 1.2;
     margin-bottom: 40px;
-    letter-spacing: -1.5;
+    letter-spacing: -1.5px;
 }
 
 h2 {
     font-size: 40px;
     line-height: 1.2;
     font-weight: 600;
+    text-align: center;
+    letter-spacing: -1px;
 }
 
 h1, h2, h3 {
     /* font-weight: 800; */
-    color: rgb(12, 1, 36);
+    color: rgb(22, 1, 66);
 }
 
 p, a {
-    color: rgb(45, 45, 45);
+    color: rgb(50, 50, 50);
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
@@ -231,7 +233,6 @@ main .hero-section .steps {
 .socials img {
     width: 40px;
     margin: 0;
-    padding: -20px;
     gap: 10px;
     transition: transform 0.5s ease-out;
 }
@@ -249,10 +250,24 @@ main .hero-section .steps {
   }
 }
 
+/* Footer */
 footer {
     align-items: center;
     align-content: center;
-    height: 100px;
+    text-align: center;
+}
+
+.upper-footer {
+    margin: 50px 0 80px 0;
+}
+
+footer .upper-footer a {
+    font-size: 14px;
+}
+
+footer .upper-footer a:hover {
+    color: darkgreen;
+    font-weight: 700;
 }
 
 footer p{
@@ -261,6 +276,11 @@ footer p{
 }
 
 /* Gallery section */
+.gallery-heading {
+    height: 100px;
+    align-content: start;
+}
+
 .gallery-images {
     display: grid;
     grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
