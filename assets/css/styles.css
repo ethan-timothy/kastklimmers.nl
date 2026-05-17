@@ -231,7 +231,22 @@ main .hero-section .steps {
 .socials img {
     width: 40px;
     margin: 0;
+    padding: -20px;
     gap: 10px;
+    transition: transform 0.5s ease-out;
+}
+
+.socials img:hover {
+    animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 footer {
