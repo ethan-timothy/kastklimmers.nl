@@ -18,7 +18,7 @@ li {
 }
 
 h1 {
-    font-size: 56px;
+    font-size: 52px;
     line-height: 1.2;
     margin-bottom: 40px;
     letter-spacing: -1.5px;
@@ -137,8 +137,7 @@ header section ul a:hover {
 }
 
 blockquote {
-    margin: 30px auto;
-    max-width: 700px;
+    margin: 100px 20px 100px 20px;
     padding: 20px 30px;
     border-left: 4px solid green;
     background-color: #e9fbe0;
@@ -147,15 +146,24 @@ blockquote {
     color: #2a2727;
 }
 
+blockquote a {
+    color: green;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+blockquote a:hover {
+    color: black;
+}
+
 #hero-section {
     scroll-margin-top: 40px;
 }
 
 main .hero-section {
-    margin-top: 250px;
+    margin-top: 160px;
     text-align: center;
-    height: 100vh;
-    align-content: center;
     margin-bottom: 100px;
 }
 
@@ -353,13 +361,6 @@ footer p{
 }
 
 @media (max-width: 950px) {
-
-    .need {
-        margin-top: 100px;
-    }
-}
-
-@media (max-width: 950px) {
     header section {
         flex-direction: column;
         text-align: center;
@@ -412,7 +413,7 @@ footer p{
 
 
     h1 {
-        font-size: 44px;
+        font-size: 28px;
         
     }
 
@@ -429,11 +430,7 @@ footer p{
     }
 
     .last-card {
-        margin-top: 700px;
-    }
-
-    .last-card {
-        margin-top: 800px;
+        margin-top: 500px;
         width: 300px;        
     }
 }
