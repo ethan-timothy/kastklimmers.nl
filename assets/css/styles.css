@@ -342,6 +342,7 @@ main .hero-section .steps {
 
 .steps-card {
     max-width: 300px;
+    /* border: 2px solid black; */
 }
 
 #card-2 h3 {
@@ -458,22 +459,14 @@ footer p{
 /* Gallery section */
 .gallery-heading {
     height: 100px;
-    text-align: center;
+    align-content: start;
 }
 
 .gallery-images {
     display: grid;
     grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
     gap:20px;
-    margin: 50px 50px;
-}
-
-.gallery-images img {
-    aspect-ratio: 1/1;
-}
-
-#last-card {
-    margin: 50px 50px;
+    margin: 0 50px;
 }
 
 /* Contact */
@@ -526,7 +519,7 @@ footer p{
     }
 
     .last-card {
-        margin-top: 600px;
+        margin-top: 900px;
     }
 }
 
@@ -543,14 +536,6 @@ footer p{
 
     h1 {
         font-size: 40px;
-    }
-
-    .steps-card {
-    max-width: 200px;
-    }
-
-    .last-card {
-        margin-top: 400px;
     }
 }
 
@@ -608,10 +593,7 @@ footer p{
     }
 
     .last-card {
-        margin: 500px 60px 100px 60px;
-    }
-
-    #last-card {
-        margin: 80px 60px 80px 60px;
+        margin-top: 500px;
+        width: 300px;        
     }
 }
