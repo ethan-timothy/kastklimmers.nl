@@ -308,7 +308,6 @@ main .hero-section .steps {
 
 .steps-card {
     max-width: 300px;
-    /* border: 2px solid black; */
 }
 
 #card-2 h3 {
@@ -425,7 +424,7 @@ footer p{
 /* Gallery section */
 .gallery-heading {
     height: 100px;
-    align-content: start;
+    text-align: center;
 }
 
 .gallery-images {
