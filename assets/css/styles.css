@@ -55,6 +55,7 @@ p, a {
     transition: 0.3s;
     margin: 0 0 100px 0;
     box-shadow: 1px 1px 1px 1px darkgreen;
+    z-index: 2000;
 }
 
 .logo img {
@@ -419,6 +420,90 @@ footer p{
   width:100%;
   height:100vh;
   border:none;
+}
+
+/* birds */
+.birds {
+  width: 90%;
+  max-width: 1200px;
+  margin: 80px auto;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.bird-species {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.bird-species img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.birds h3 {
+    position: absolute;
+    left: 20px;
+    top: 80px;
+    color: white;
+    font-size: 24px;
+    z-index: 2;
+    transition: opacity .3s;
+    text-shadow: black 2px 2px 2px;
+}
+
+.bird-info {
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  padding: 24px;
+  box-sizing: border-box;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.2)
+  );
+
+  color: #fff;
+  text-shadow: black 2px 2px;
+  transition: bottom 0.4s ease;
+}
+
+.bird-info h3 {
+  margin-bottom: 12px;
+  font-size: 28px;
+}
+
+.bird-info p {
+  margin-bottom: 12px;
+  line-height: 1.5;
+  font-size: 16px;
+  color: white;
+}
+
+.bird-species:hover .bird-info {
+  bottom: 0;
+  align-content: center;
+}
+
+.bird-species:hover img {
+  transform: scale(1.1);
 }
 
 
