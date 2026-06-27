@@ -433,6 +433,10 @@ footer p{
   gap: 24px;
 }
 
+#birds {
+    scroll-margin-top: 80px;
+}
+
 .bird-species {
   position: relative;
   height: 400px;
