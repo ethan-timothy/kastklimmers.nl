@@ -27,7 +27,7 @@
         <ul class="menu">
           <li><a href="index.html">Thuis</a></li>
           <li><a href="#">Galerij</a></li>
-          <li><a class="nav-cta" href="#form-container">Contact</a></li>
+          <li><a class="nav-cta" href="#contact">Contact</a></li>
         </ul>
       </div>
     </header>
@@ -51,18 +51,170 @@
       <img src="assets/images/img-12.jpeg" alt="Image 12" />
     </div>
 
-    <div class="form-container" id="form-container">
-      <h3>neem contact op met ons team</h3>
-      <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSf3MkKpswWU-9lfSPqHQ-VGJy5p94m1cdEGZ2FSphuHEt2WeQ/viewform?embedded=true"
-        width="640"
-        height="1465"
-        frameborder="0"
-        marginheight="0"
-        marginwidth="0"
-        >Loading…</iframe
-      >
-    </div>
+    <section class="contact-section" id="contact">
+      <div class="contact-card">
+        <div class="contact-header">
+          <h1>CONTACT KASTKLIMMER</h1>
+
+          <p>
+            Voor een snelle reactie kunt u ons bereiken via WhatsApp op
+            <strong><span class="nowrap">+31 1 23456789</span></strong> of een
+            e-mail sturen naar
+            <strong><span class="nowrap">team@kastklimmers.nl</span></strong>
+          </p>
+        </div>
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input
+            type="hidden"
+            name="access_key"
+            value="c7822f60-3bed-4441-a2db-12c06ab4a8a7"
+          />
+
+          <input
+            type="hidden"
+            name="subject"
+            value="New Kastklimmers Contact Form"
+          />
+
+          <input type="hidden" name="from_name" value="Kastklimmers Website" />
+
+          <!-- Name -->
+          <div class="form-group">
+            <label for="name"> Naam </label>
+
+            <input
+              type="text"
+              id="name"
+              name="Name"
+              placeholder="Jouw naam"
+              required
+            />
+          </div>
+
+          <!-- Email -->
+          <div class="form-group">
+            <label for="email"> E-mailadres </label>
+
+            <input
+              type="email"
+              id="email"
+              name="Email"
+              placeholder="voorbeeld@email.com"
+              required
+            />
+          </div>
+
+          <!-- Mobile -->
+          <div class="form-group">
+            <label for="phone"> mobiel nummer </label>
+
+            <input
+              type="tel"
+              id="phone"
+              name="Mobile"
+              placeholder="Optioneel, maar helpt bij de communicatie."
+              required
+            />
+          </div>
+
+          <!-- Services -->
+          <div class="form-group">
+            <label for="service"> vereiste diensten </label>
+
+            <select id="service" name="Service" required>
+              <option value="">een service selecteren</option>
+              <option>Installatie van vogelnesten</option>
+              <option>Nestweven</option>
+              <option>Algemene consultatie</option>
+              <option>Ander</option>
+            </select>
+          </div>
+
+          <!-- Bird Nests -->
+          <div class="form-group">
+            <label>Vogelnest(en) vereist</label>
+
+            <div class="checkbox-grid">
+              <label class="check-item">
+                <input type="checkbox" name="Bird Nests[]" value="Koolmees" />
+
+                <span>Ransuil</span>
+              </label>
+
+              <label class="check-item">
+                <input
+                  type="checkbox"
+                  name="Bird Nests[]"
+                  value="House Sparrow (Huismus)"
+                />
+
+                <span>Bosuil</span>
+              </label>
+
+              <label class="check-item">
+                <input
+                  type="checkbox"
+                  name="Bird Nests[]"
+                  value="Barn Owl (Kerkuil)"
+                />
+
+                <span>Sperwer</span>
+              </label>
+
+              <label class="check-item">
+                <input
+                  type="checkbox"
+                  name="Bird Nests[]"
+                  value="European Starling (Spreeuw)"
+                />
+
+                <span>Buizerd</span>
+              </label>
+
+              <label class="check-item">
+                <input type="checkbox" name="Bird Nests[]" value="Storks" />
+
+                <span>Grijze reiger</span>
+              </label>
+
+              <label class="check-item">
+                <input type="checkbox" name="Bird Nests[]" value="Other" />
+
+                <span>Ander</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Location -->
+          <div class="form-group">
+            <label for="location">Uw locatie</label>
+
+            <input
+              type="text"
+              id="location"
+              name="Location"
+              placeholder="Voer uw plaatsnaam of adres in."
+              required
+            />
+          </div>
+
+          <!-- Message -->
+          <div class="form-group">
+            <label for="message"> Aanvullende informatie </label>
+
+            <textarea
+              id="message"
+              name="Message"
+              rows="7"
+              placeholder="Vertel ons alles wat je ons wilt laten weten..."
+            ></textarea>
+          </div>
+
+          <button class="submit-btn" type="submit">Bericht verzenden</button>
+        </form>
+      </div>
+    </section>
 
     <div class="last-card">
       <div class="cta-card">
@@ -71,7 +223,7 @@
           <li>
             <a class="primary-btn" href="index.html#hero-section">Get one</a>
           </li>
-          <li><a class="secondary-btn" href="#form-container">Contact</a></li>
+          <li><a class="secondary-btn" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
