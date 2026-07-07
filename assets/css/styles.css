@@ -61,8 +61,7 @@ p, a {
 
 .logo img {
     display: block;
-    width: 200px;
-    border-radius: 10px;
+    width: 160px;
 }
 
 .navigation {
@@ -649,9 +648,12 @@ textarea {
 
 /* Responsive */
 @media (max-width: 1020px){
+    .logo img {
+        width: 120px;
+    }
 
     main {
-    margin-bottom: 400px;
+        margin-bottom: 400px;
     }
 
     .home-section {
