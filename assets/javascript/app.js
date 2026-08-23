@@ -7,3 +7,9 @@ document.addEventListener("click", (event) => {
     toggleMenu.checked = false;
   }
 });
+
+navigation.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    toggleMenu.checked = false;
+  });
+});
