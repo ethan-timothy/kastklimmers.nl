@@ -1,10 +1,10 @@
-*{
+* {
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     max-width: 1600px;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     scroll-behavior: smooth;
 }
@@ -28,13 +28,16 @@ h2 {
     letter-spacing: -1px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     /* font-weight: 800; */
     color: rgb(22, 1, 66);
 }
 
-p, a {
-    color:#666;
+p,
+a {
+    color: #666;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
@@ -159,25 +162,25 @@ p, a {
     display: none;
 }
 
-.navigation input:checked ~ .hamburger {
+.navigation input:checked~.hamburger {
     background: transparent;
 }
 
-.navigation input:checked ~ .hamburger:before {
+.navigation input:checked~.hamburger:before {
     top: 0;
     transform: rotate(-45deg);
     width: 30px;
 }
 
-.navigation input:checked ~ .hamburger:after {
+.navigation input:checked~.hamburger:after {
     top: 0;
     transform: rotate(45deg);
     width: 30px;
 }
 
-.navigation input:checked ~ .menu {
+.navigation input:checked~.menu {
     right: 0;
-    box-shadow: -20px 0 40px rgba(0,0,0,0.3);
+    box-shadow: -20px 0 40px rgba(0, 0, 0, 0.3);
 }
 
 .home-section {
@@ -280,7 +283,7 @@ main .hero-section .steps {
     color: green;
 }
 
-#card-3 h3{
+#card-3 h3 {
     color: green;
 }
 
@@ -315,7 +318,8 @@ main .hero-section .steps {
     margin-bottom: 20px;
 }
 
-.cta-card .primary-btn, .secondary-btn {
+.cta-card .primary-btn,
+.secondary-btn {
     background-color: green;
     padding: 10px 5px;
     display: inline-block;
@@ -323,7 +327,8 @@ main .hero-section .steps {
     color: white;
 }
 
-.cta-card .primary-btn:hover, .secondary-btn:hover {
+.cta-card .primary-btn:hover,
+.secondary-btn:hover {
     background-color: darkgreen;
     color: black;
 }
@@ -348,12 +353,13 @@ main .hero-section .steps {
 }
 
 @keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /* Footer */
@@ -376,7 +382,7 @@ footer .upper-footer a:hover {
     font-weight: 700;
 }
 
-footer p{
+footer p {
     font-size: 12px;
     text-align: center;
 }
@@ -408,164 +414,164 @@ footer p{
 
 /* === Contact Section === */
 .contact-section {
-    width:100%;
-    padding:80px 20px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    width: 100%;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-card {
-    width:100%;
-    max-width:850px;
-    background:#fff;
-    padding:50px;
-    border-radius:18px;
+    width: 100%;
+    max-width: 850px;
+    background: #fff;
+    padding: 50px;
+    border-radius: 18px;
     box-shadow:
-        0 15px 45px rgba(0,0,0,.08);
+        0 15px 45px rgba(0, 0, 0, .08);
 }
 
 .contact-header {
-    text-align:center;
-    margin-bottom:45px;
+    text-align: center;
+    margin-bottom: 45px;
 }
 
 .contact-header h1 {
-    font-size:2rem;
+    font-size: 2rem;
     color: rgb(22, 1, 66);
-    margin-bottom:15px;
+    margin-bottom: 15px;
 }
 
 .contact-header p {
-    color:#666;
-    font-size:15px;
-    max-width:600px;
-    margin:auto;
+    color: #666;
+    font-size: 15px;
+    max-width: 600px;
+    margin: auto;
 }
 
 .nowrap {
-  white-space: nowrap;
+    white-space: nowrap;
 }
 
 
 form {
-    display:flex;
-    flex-direction:column;
-    gap:28px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
 }
 
 .form-group {
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
 }
 
 label {
-    font-weight:600;
-    margin-bottom:10px;
+    font-weight: 600;
+    margin-bottom: 10px;
     color: darkgreen;
 }
 
 input,
 select,
 textarea {
-    width:100%;
-    padding:15px 18px;
-    border:1px solid #d7d7d7;
-    border-radius:10px;
-    font-size:15px;
-    font-family:'Poppins',sans-serif;
-    background:#fafafa;
-    transition:.3s;
+    width: 100%;
+    padding: 15px 18px;
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+    transition: .3s;
 }
 
 input:focus,
 select:focus,
 textarea:focus {
-    outline:none;
-    border-color:#2E8B57;
-    background:#fff;
+    outline: none;
+    border-color: #2E8B57;
+    background: #fff;
     box-shadow:
-    0 0 0 4px rgba(46,139,87,.15);
+        0 0 0 4px rgba(46, 139, 87, .15);
 }
 
 textarea {
-    resize:vertical;
-    min-height:170px;
+    resize: vertical;
+    min-height: 170px;
 }
 
 .checkbox-grid {
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:15px;
-    margin-top:10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 10px;
 }
 
 .check-item {
-    display:flex;
-    align-items:center;
-    gap:12px;
-    padding:14px 16px;
-    border:1px solid #ddd;
-    border-radius:10px;
-    cursor:pointer;
-    transition:.25s;
-    background:#fafafa;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .25s;
+    background: #fafafa;
 }
 
 .check-item:hover {
-    background:#eef8f1;
-    border-color:#2E8B57;
+    background: #eef8f1;
+    border-color: #2E8B57;
 }
 
 .check-item input {
-    width:18px;
-    height:18px;
-    accent-color:#2E8B57;
-    cursor:pointer;
+    width: 18px;
+    height: 18px;
+    accent-color: #2E8B57;
+    cursor: pointer;
 }
 
 .check-item span {
-    font-size:15px;
+    font-size: 15px;
 }
 
 .submit-btn {
-    border:none;
-    background:#2E8B57;
-    color:#fff;
-    padding:18px;
-    font-size:16px;
-    font-weight:600;
-    border-radius:12px;
-    cursor:pointer;
-    transition:.3s;
+    border: none;
+    background: #2E8B57;
+    color: #fff;
+    padding: 18px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: .3s;
 }
 
 .submit-btn:hover {
-    background:#246c45;
-    transform:translateY(-2px);
+    background: #246c45;
+    transform: translateY(-2px);
     box-shadow:
-    0 12px 25px rgba(46,139,87,.30);
+        0 12px 25px rgba(46, 139, 87, .30);
 }
 
 .submit-btn:active {
-    transform:scale(.98);
+    transform: scale(.98);
 }
 
 
 
 ::placeholder {
-    color:#999;
+    color: #999;
 }
 
 /* birds */
 .birds {
-  width: 90%;
-  max-width: 1200px;
-  margin: 80px auto;
+    width: 90%;
+    max-width: 1200px;
+    margin: 80px auto;
 
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
 }
 
 #birds {
@@ -573,19 +579,19 @@ textarea {
 }
 
 .bird-species {
-  position: relative;
-  height: 400px;
-  overflow: hidden;
-  border-radius: 16px;
-  cursor: pointer;
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 16px;
+    cursor: pointer;
 }
 
 .bird-species img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.4s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
 }
 
 .birds h3 {
@@ -600,54 +606,52 @@ textarea {
 }
 
 .bird-info {
-  position: absolute;
-  left: 0;
-  bottom: -100%;
-  width: 100%;
-  height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 
-  padding: 24px;
-  box-sizing: border-box;
+    padding: 24px;
+    box-sizing: border-box;
 
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.9),
-    rgba(0, 0, 0, 0.2)
-  );
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.9),
+            rgba(0, 0, 0, 0.2));
 
-  color: #fff;
-  text-shadow: black 2px 2px;
-  transition: bottom 0.4s ease;
+    color: #fff;
+    text-shadow: black 2px 2px;
+    transition: bottom 0.4s ease;
 }
 
 .bird-info h3 {
-  margin-bottom: 12px;
-  font-size: 28px;
+    margin-bottom: 12px;
+    font-size: 28px;
 }
 
 .bird-info p {
-  margin-bottom: 12px;
-  line-height: 1.5;
-  font-size: 16px;
-  color: white;
+    margin-bottom: 12px;
+    line-height: 1.5;
+    font-size: 16px;
+    color: white;
 }
 
 .bird-species:hover .bird-info {
-  bottom: 0;
-  align-content: center;
+    bottom: 0;
+    align-content: center;
 }
 
 .bird-species:hover img {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 
 /* Responsive */
-@media (max-width: 1020px){
+@media (max-width: 1020px) {
     .logo img {
         width: 120px;
     }
@@ -663,7 +667,7 @@ textarea {
     h1 {
         font-size: 35px;
     }
-        
+
     .need {
         margin-top: 0px;
     }
@@ -678,15 +682,15 @@ textarea {
     }
 
     #card-2 h3 {
-    padding-top: 20px;
+        padding-top: 20px;
     }
 
     #card-1 h3 {
-    padding-top: 20px;
+        padding-top: 20px;
     }
 
-    #card-3 h3{
-    padding-top: 20px;
+    #card-3 h3 {
+        padding-top: 20px;
     }
 
     .gallery-images {
@@ -694,7 +698,7 @@ textarea {
     }
 
     .form-container {
-    margin-bottom: 200px;
+        margin-bottom: 200px;
     }
 }
 
@@ -714,7 +718,7 @@ textarea {
     }
 
     .steps-card {
-    max-width: 200px;
+        max-width: 200px;
     }
 }
 
@@ -732,32 +736,33 @@ textarea {
     }
 
     .contact-card {
-        padding:30px 22px;
+        padding: 30px 22px;
     }
 
     .contact-header h1 {
-        font-size:1.6rem;
+        font-size: 1.6rem;
     }
 
     .checkbox-grid {
-        grid-template-columns:1fr;
+        grid-template-columns: 1fr;
     }
 
     input,
     select,
     textarea {
-        padding:14px;
+        padding: 14px;
     }
 
     .submit-btn {
-        width:100%;
+        width: 100%;
     }
 }
 
 @media screen and (max-width:650px) {
+
     .hamburger,
     .toggle-menu {
-    display: block;
+        display: block;
     }
 
     .header {
@@ -796,18 +801,19 @@ textarea {
 
 }
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
 
     h1 {
         font-size: 28px;
-        
+
     }
 
     h2 {
         font-size: 32px;
     }
 
-    p , a {
+    p,
+    a {
         font-size: 16px;
     }
 
@@ -816,56 +822,56 @@ textarea {
     }
 
     .form-container {
-    margin-bottom: 200px;
+        margin-bottom: 200px;
     }
 }
 
-@media(max-width:480px){
+@media(max-width:480px) {
 
-.contact-section{
+    .contact-section {
 
-    padding:40px 12px;
+        padding: 40px 12px;
 
-}
+    }
 
-.contact-card{
+    .contact-card {
 
-    border-radius:14px;
+        border-radius: 14px;
 
-    padding:25px 18px;
+        padding: 25px 18px;
 
-}
+    }
 
-.contact-header h1{
+    .contact-header h1 {
 
-    font-size:1.4rem;
+        font-size: 1.4rem;
 
-}
+    }
 
-.contact-header p{
+    .contact-header p {
 
-    font-size:14px;
+        font-size: 14px;
 
-}
+    }
 
-label{
+    label {
 
-    font-size:14px;
+        font-size: 14px;
 
-}
+    }
 
-input,
-select,
-textarea{
+    input,
+    select,
+    textarea {
 
-    font-size:14px;
+        font-size: 14px;
 
-}
+    }
 
-.submit-btn{
+    .submit-btn {
 
-    font-size:15px;
+        font-size: 15px;
 
-}
+    }
 
 }
